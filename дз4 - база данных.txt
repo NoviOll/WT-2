@@ -1,0 +1,18 @@
+CREATE TABLE mates (
+  mateId int NOT NULL AUTO_INCREMENT,
+  name text NOT NULL,
+  age int NOT NULL,
+  address text NOT NULL,
+  PRIMARY KEY (mateId)
+);
+
+INSERT INTO mates (name, age, address)
+VALUES ('Anny', 22, 'Flower District');
+
+INSERT INTO mates (name, age, address)
+VALUES ('John', 23,'Animal District');
+
+INSERT INTO mates (name, age, address)
+VALUES ('Kate', 21,'Fruit District');
+
+SELECT * FROM mates WHERE age > 0;
